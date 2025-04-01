@@ -2,24 +2,45 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Valutaomregner/Currency Converter</title>
     <meta name="description" content="">
-    <link rel="shortcut icon" href="#">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="assets/css/site.css">
     <script src="assets/js/site.js" defer></script>
 </head>
 
 <body>
-
-
-
+    <fieldset class="currency-converter-form">
+        <legend>
+            <h1>Valutaomregner</h1>
+        </legend>
+        <label for="starting-amount">Hvilket beløb i danske kroner vil du omregne til en anden valuta?</label>
+        <input type="number" id="startingAmountDkkInput" class="startingAmountDkkInputClass" name="starting-amount" placeholder="Beløb i DKK til omregning">
+        <label for="end-currency">Til hvilken valuta skal beløbet omregnes?</label>
+        <select id="endCurrencyIsoSelect" name="end-currency">
+            <option value="CAD">CAD (canadisk dollar)</option>
+            <option value="EUR" selected>EUR (euro)</option>
+            <option value="USD">USD (amerikansk dollar)</option>
+        </select>
+        <button id="convertButton">Beregn</button>
+        <section>
+            <h2>Resultat</h2>
+            <p id="endAmountP" class="result">Ifølge Toldstyrelsens Toldtarif (1. april 2025), er beløbet så meget værd i slutvalutaen: </p>
+        </section>
+    </fieldset>
+    <aside>
+        <h2>Kilde</h2>
+        <a href="https://tarif.skat.dk/arctictariff-public-web/#!/taric/duty/exchangerates">Toldtariffen > Beregning af told > Valutakurser</a>
+    </aside>
 </body>
-
+<footer>
+    <p>© Boilerplate af Bo Nicolaisen, underviser; kodning af Marie-Pierre Lessard.</p>
+</footer>
 </html>

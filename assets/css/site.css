@@ -1,0 +1,38 @@
+.currency-converter-form label, 
+.currency-converter-form input, 
+.currency-converter-form button {
+    display: block;
+}
+
+.currency-converter-form input,
+.currency-converter-form select,
+.currency-converter-form button {
+    min-width: 35ch;
+    width: 35%;
+}
+
+.currency-converter-form label {
+    margin-block: .5rem;
+}
+
+.currency-converter-form button {
+    margin-block: 1.5rem;
+}
+.currency-converter-form {
+    background-color: rgb(62, 187, 236);
+    border: .5px gray solid;
+}
+
+.currency-converter-form h1 {
+    background-color: lightgray;
+    border: .5px gray solid;
+    padding-block: .5rem;
+    padding-inline: .8rem;
+}
+
+.result {
+    background-color: white;
+    border: .5px gray solid;
+    line-height: 2rem;    
+    padding-inline: .3rem;
+}

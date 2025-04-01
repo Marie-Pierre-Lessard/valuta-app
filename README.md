@@ -7,4 +7,6 @@
 
   Design er frit.
 
+Opgavens adresse er:
+https://github.com/Marie-Pierre-Lessard/valuta-app
   
