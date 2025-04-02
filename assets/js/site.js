@@ -31,6 +31,7 @@ const conversionResult = document.getElementById('endAmountP');
 
 conversionButton.addEventListener('click', multiplyValue);
 
+/* If... else if... else does not work. Instead of a series of "ifs", it is also possible to use a switch statement. */
 function multiplyValue() {
     console.log(startingAmountDkk.value);
     /* What needs to be multiplied is the value inside of the element, not the element itself! */
@@ -50,7 +51,7 @@ function multiplyValue() {
     startingAmountDkk.value = '';
 }
 
-/* The folowing function is the one that actually displays the text/result in the field below, not the above!
+/* The folowing function is the one that actually displays the text/result in the field to the right (below on a mobile), not the above function!
 conversionResult is the place where the result conversionData is going to be displayed */
 function showResult(conversionData, conversionResult) {
     conversionResult.innerHTML = conversionData;
