@@ -26,9 +26,11 @@
             <article class="two-col-grid">
 
                 <div class="width-of-content">
-                    <label for="starting-amount">Hvilket beløb i danske kroner vil du omregne til en anden valuta?</label>
+                    <!-- "Tip: The for attribute of <label> must be equal to the id attribute of the related element to bind them together." https://www.w3schools.com/tags/tag_label.asp -->
+                    <label for="startingAmountDkkInput">Hvilket beløb i danske kroner vil du omregne til en anden valuta?</label>
+                    <!-- "The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted. Note: Only form elements with a name attribute will have their values passed when submitting a form." https://www.w3schools.com/tags/att_input_name.asp -->
                     <input type="number" id="startingAmountDkkInput" class="startingAmountDkkInputClass" name="starting-amount" placeholder="Beløb i DKK til omregning">
-                    <label for="end-currency">Til hvilken valuta skal beløbet omregnes?</label>
+                    <label for="endCurrencyIsoSelect">Til hvilken valuta skal beløbet omregnes?</label>
                     <select id="endCurrencyIsoSelect" name="end-currency">
                         <option value="CAD">CAD (canadisk dollar)</option>
                         <option value="EUR" selected>EUR (euro)</option>
